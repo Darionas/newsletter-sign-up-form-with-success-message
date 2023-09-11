@@ -8,22 +8,39 @@
   <meta name="keywords" content="Newsletter, sign up, message" />
   <meta name="description" content="Newsletter sign-up form with success message" />
   <meta name="author" content="Ahmad Hussain & darionas" />
-
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="FM_part.css" />
 </head>
 <body>
     <div class="grid-container">
         <!--1ST COMPONENT-->
-        <header>
-
+        <header class="sr-only">
+            <h1>Newsletter sign-up form</h1>
         </header>
         <!--2ND COMPONENT-->
-        <main>
+        <main class="news-letter">
             <!--2.1ST COMPONENT-->
-            <section>
-
+            <section class="news-letter__image">
+                <picture class="news-letter__image-container">
+                    <source media="(max-width: 47.9375rem)" srcset="assets/images/illustration-sign-up-mobile.svg">
+                    <source media="(min-width: 48rem)" srcset="assets/images/illustration-sign-up-desktop.svg">
+                    <img class="image" src="assets/images/illustration-sign-up-desktop.svg" alt="Newsletter logo"/>
+                </picture>
             </section>
             <!--2.2ND COMPONENT-->
-            <section>
+            <section class="news-letter__info">
+                <div class="news-letter__description">
+                    <h2 class="news-letter__description-title">Stay updated!</h2>
+                    <p class="news-letter__description-offer">Join 60,000+ product managers receiving monthly updates on:</p>
+                    <ul class="news-letter__description-offer-list">
+                        <li><img class="check__mark" src="assets/images/icon-list.svg" alt="Check mark" /><span class="txt">Product discovery and building what matters</span></li>
+                        <li><img class="check__mark" src="assets/images/icon-list.svg" alt="Check mark" /><span class="txt">Measuring to ensure updates are a success</span></span></li>
+                        <li><img class="check__mark" src="assets/images/icon-list.svg" alt="Check mark" /><span class="txt">And much more!</span></li>
+                    </ul>
+                </div>
+                <form class="news-letter__subscription-form">
+
+                </form>
 
             </section>
             <!--2.3RD COMPONENT (modal)-->

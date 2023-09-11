@@ -5,7 +5,8 @@
 |Ahmad Hussain  |Darionas        |
 |    :----:     |     :----:     |
 |               |Initial update  |
-|               |                |
+|               |update_1        |
+|               |update_2        |
 
 ## Challenge based on
 
