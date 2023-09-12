@@ -8,30 +8,55 @@
   <meta name="keywords" content="Newsletter, sign up, message" />
   <meta name="description" content="Newsletter sign-up form with success message" />
   <meta name="author" content="Ahmad Hussain & darionas" />
-
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="FM_part.css" />
 </head>
 <body>
     <div class="grid-container">
-        <!--1ST COMPONENT-->
-        <header>
-
+        <!--1 COMPONENT-->
+        <header class="sr-only">
+            <h1>Newsletter sign-up form</h1>
         </header>
-        <!--2ND COMPONENT-->
-        <main>
-            <!--2.1ST COMPONENT-->
-            <section>
+        <!--2 COMPONENT-->
+        <main class="newsletter">
+            <!--2.1 COMPONENT-->
+            <section class="newsletter__image" aria-label="newsletter logo">
+                <picture class="newsletter__image-container">
+                    <source media="(max-width: 47.9375rem)" srcset="assets/images/illustration-sign-up-mobile.svg">
+                    <source media="(min-width: 48rem)" srcset="assets/images/illustration-sign-up-desktop.svg">
+                    <img class="image" src="assets/images/illustration-sign-up-desktop.svg" alt="Newsletter logo"/>
+                </picture>
+            </section>
+            <!--2.2 COMPONENT-->
+            <section class="newsletter__info" aria-label="Newsletter">
+                <div class="newsletter__description">
+                    <h2 class="newsletter__description-title">Stay updated!</h2>
+                    <p class="newsletter__description-offer">Join 60,000+ product managers receiving monthly updates on:</p>
+                    <ul class="newsletter__description-offer-list">
+                        <li><img class="check__mark" src="assets/images/icon-list.svg" alt="Check mark" /><span class="txt">Product discovery and building what matters</span></li>
+                        <li><img class="check__mark" src="assets/images/icon-list.svg" alt="Check mark" /><span class="txt">Measuring to ensure updates are a success</span></span></li>
+                        <li><img class="check__mark" src="assets/images/icon-list.svg" alt="Check mark" /><span class="txt">And much more!</span></li>
+                    </ul>
+                </div>
+                <form class="newsletter__subscription-form">
+                    <label for="email" >Email addres <span class="mandatory">*</span></label>
+                    <span class="newsletter__subscription-form-error" role="alert">Valid email required</span><br/>
+                    <input id="newsletter__subscription-form-email" type="email" name="email" required aria-required="true" placeholder="email@compony.com" />
+                    <img class="error" src="assets/images/icon-error.svg" alt="error" /><br/>
+                    <input id="newsletter__subscription-form-btn" type="submit" value="Subscribe to monthly newsletter" />
+                </form>
 
             </section>
-            <!--2.2ND COMPONENT-->
-            <section>
-
-            </section>
-            <!--2.3RD COMPONENT (modal)-->
-            <section>
-
+            <!--2.3 COMPONENT (modal)-->
+            <section id="myModal" class="newsletter__subscription-success" aria-label="Form has been submitted successfully">
+                <img class="newsletter__subscription-success-image" src="assets/images/icon-success.svg" alt="Form submitted" />
+                <h2 class="newsletter__subscription-success-title">Thanks for subscribing!</h2>
+                <p class="newsletter__subscription-success-info">A confirmation email has been sent to <b>ash@loremcompany.com</b>.
+                Please open it and click the button inside to confirm your subscription.</p>
+                <button class="newsletter__subscription-success-btn">Dismiss message</button>
             </section>
         </main>
-        <!--3RD COMPONENT-->
+        <!--3 COMPONENT-->
         <footer class="attribution">
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
             Coded by <a href="#">@Ahmad Hussain</a> & <a href="#">@Darionas</a>.
