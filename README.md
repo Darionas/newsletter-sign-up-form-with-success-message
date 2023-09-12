@@ -7,6 +7,7 @@
 |               |Initial update  |
 |               |update_1        |
 |               |update_2        |
+|               |update_3        |
 
 ## Challenge based on
 
@@ -30,7 +31,7 @@ Users should be able to:
 
 - [x] Create drawing from design (structure of design)(1st task)
 - [x] Create of repo (2nd task)
-- [ ] Create HTML layout (3rd task)
+- [x] Create HTML layout (3rd task)
 - [ ] Create CSS layout according style guides (4th task)
 - [ ] Create CSS (grid) layout for mobile first (5th task)
 - [ ] Create CSS (grid) layout for desktop (6th task)
