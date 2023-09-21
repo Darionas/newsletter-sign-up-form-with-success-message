@@ -2,13 +2,14 @@
 
 ## Welcome! 👋
 
-|Ahmad Hussain  |Darionas        |
-|    :----:     |     :----:     |
-|               |Initial update  |
-|               |update_1        |
-|               |update_2        |
-|               |update_3        |
-|               |update_4        |
+|      Ahmad Hussain       |    Darionas    |
+| :----------------------: | :------------: |
+|                          | Initial update |
+|                          |    update_1    |
+|                          |    update_2    |
+|                          |    update_3    |
+|                          |    update_4    |
+| CSS for mobile main page |                |
 
 ## Challenge based on
 
@@ -22,9 +23,7 @@ Users should be able to:
 
 - Add their email and submit the form
 - See a success message with their email after successfully submitting the form
-- See form validation messages if:
-      - The field is left empty
-      - The email address is not formatted correctly
+- See form validation messages if: - The field is left empty - The email address is not formatted correctly
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
@@ -39,7 +38,6 @@ Users should be able to:
 - [ ] Implement JavaScript (7th task)
 - [ ] Overview of solution and RWD (8th task)
 - [ ] Tada it is done. Congratulation you reach your goal.🎉
-
 
 ## GitHub flow, so all code changes happen through Pull Request
 

@@ -8,7 +8,11 @@
   <meta name="keywords" content="Newsletter, sign up, message" />
   <meta name="description" content="Newsletter sign-up form with success message" />
   <meta name="author" content="Ahmad Hussain & darionas" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="FM_part.css" />
 </head>
 <body>
@@ -39,16 +43,19 @@
                     </ul>
                 </div>
                 <form class="newsletter__subscription-form">
-                    <label for="email" >Email addres <span class="mandatory">*</span></label>
-                    <span class="newsletter__subscription-form-error" role="alert">Valid email required</span><br/>
+                    <div class="inputEmail">
+                        <label for="email" >Email address <span class="mandatory hidden">*</span></label>
+                    <span class="newsletter__subscription-form-error hidden" role="alert">Valid email required</span><br/>
                     <input id="newsletter__subscription-form-email" type="email" name="email" required aria-required="true" placeholder="email@compony.com" />
-                    <img class="error" src="assets/images/icon-error.svg" alt="error" /><br/>
-                    <input id="newsletter__subscription-form-btn" type="submit" value="Subscribe to monthly newsletter" />
+                    <img class="error hidden" src="assets/images/icon-error.svg" alt="error" /><br/>
+                    </div>
+                    
+                    <input class="inputSubmit" id="newsletter__subscription-form-btn" type="submit" value="Subscribe to monthly newsletter" />
                 </form>
 
             </section>
             <!--2.3 COMPONENT (modal)-->
-            <section id="myModal" class="newsletter__subscription-success" aria-label="Form has been submitted successfully">
+            <section id="myModal" class="newsletter__subscription-success hidden" aria-label="Form has been submitted successfully">
                 <img class="newsletter__subscription-success-image" src="assets/images/icon-success.svg" alt="Form submitted" />
                 <h2 class="newsletter__subscription-success-title">Thanks for subscribing!</h2>
                 <p class="newsletter__subscription-success-info">A confirmation email has been sent to <b>ash@loremcompany.com</b>.
@@ -58,8 +65,8 @@
         </main>
         <!--3 COMPONENT-->
         <footer class="attribution">
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-            Coded by <a href="#">@Ahmad Hussain</a> & <a href="#">@Darionas</a>.
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. <br> 
+            Coded by <a href="https://www.frontendmentor.io/profile/mah07308">@Ahmad Hussain</a> & <a href="https://www.frontendmentor.io/profile/Darionas">@Darionas</a>.
         </footer>
     </div>
 </body>
