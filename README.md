@@ -2,14 +2,15 @@
 
 ## Welcome! 👋
 
-|      Ahmad Hussain       |    Darionas    |
-| :----------------------: | :------------: |
-|                          | Initial update |
-|                          |    update_1    |
-|                          |    update_2    |
-|                          |    update_3    |
-|                          |    update_4    |
-| CSS for mobile main page |                |
+|             Ahmad Hussain             |    Darionas    |
+| :-----------------------------------: | :------------: |
+|                                       | Initial update |
+|                                       |    update_1    |
+|                                       |    update_2    |
+|                                       |    update_3    |
+|                                       |    update_4    |
+|       CSS for mobile main page        |                |
+| Fixed img clipping on smaller screens |                |
 
 ## Challenge based on
 
