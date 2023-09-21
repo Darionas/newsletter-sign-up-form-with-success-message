@@ -4,11 +4,12 @@
 
 |      Ahmad Hussain       |    Darionas    |
 | :----------------------: | :------------: |
-| CSS for mobile main page | Initial update |
+|                          | Initial update |
 |                          |    update_1    |
 |                          |    update_2    |
 |                          |    update_3    |
 |                          |    update_4    |
+| CSS for mobile main page |                |
 
 ## Challenge based on
 
