@@ -33,6 +33,7 @@ body {
 }
 
 .grid-container {
+  width: 100vw;
   max-width: 24rem;
   background-color: var(--white);
 }
