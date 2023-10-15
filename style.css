@@ -61,7 +61,7 @@ body {
 .error__sign {
     position: absolute;
     top: 3rem;
-    right: .3rem;
+    right: .4rem;
 }
 
 /* style 1st component - mobile */
@@ -114,6 +114,7 @@ body {
 
 #newsletter__subscription-form-error {
     font-size: .8rem;
+    font-weight: var(--fw-700);
     color: var(--tomato);
     float: right;
     margin-top: .4rem;
@@ -137,6 +138,7 @@ body {
   margin-bottom: 1.5rem;
   border: 0.1rem solid var(--grey);
   border-radius: 0.5rem;
+  font-weight: var(--fw-700);
 }
 
 .inputSubmit {
