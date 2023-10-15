@@ -1,5 +1,5 @@
 :root {
-  /* Primary Colors */
+  /* Primary Color */
   --tomato: hsl(4, 100%, 67%);
 
   /* Neutral Colors */
@@ -7,42 +7,84 @@
   --charcoal-grey: hsl(235, 18%, 26%);
   --grey: hsl(231, 7%, 60%);
   --white: hsl(0, 0%, 100%);
+
+
+  /* fonts */
+  --ff-primary: 'Roboto', sans-serif;
+  --fw-400: 400; /* base */
+  --fw-700: 700;
+  --fs-16: 1rem; /* 16px base */
+
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-
-.hidden {
-  display: none;
-}
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--ff-primary);
+  font-weight: vr(--fw-400);
+  font-size: var(--fs-16);
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--charcoal-grey);
 }
 
+/*----------------Mobile layout--------------------*/
 .grid-container {
-  max-width: 24rem;
   background-color: var(--white);
 }
 
-.newsletter__image img {
-  width: 100%;
+.hidden {
+  display: none;
 }
 
+.show {
+  display: block;
+}
+
+.inpBorder__onFocus:hover {
+  cursor: pointer;
+  border-color: var(--dark-slate-grey);
+}
+
+.inp__onError {
+  background-color: hsl(4, 100%, 67%, .2);
+  color: var(--tomato);
+  outline-color: var(--tomato);
+  border-color: var(--tomato) !important;
+}
+
+.btnColor__onFocus:hover {
+  background-image: linear-gradient(to right, #f45366 40%, #fe8f47);
+  border: none;
+}
+
+.error__sign {
+    position: absolute;
+    top: 3rem;
+    right: .3rem;
+}
+
+/* style 1st component - mobile */
+/*https://www.w3schools.com/accessibility/accessibility_heading_levels.php*/
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  /*padding: 0;
+  margin: -1px;*/
+  overflow: hidden;
+  /*clip: rect(0, 0, 0, 0);*/
+  /*border: 0;*/
+}
+
+/* style 2.1 component - mobile */
+
+/* style 2.2 component - mobile */
 .newsletter__info {
-  margin: 2rem 1.5rem;
+  margin: auto;
+  max-width: 20rem;
 }
 
 .newsletter__description {
@@ -70,15 +112,28 @@ body {
   padding-bottom: 0.5rem;
 }
 
-.inputEmail label {
-  font-size: 0.9rem;
-  font-weight: bold;
+#newsletter__subscription-form-error {
+    font-size: .8rem;
+    color: var(--tomato);
+    float: right;
+    margin-top: .4rem;
 }
+
+.inputEmail {
+  position: relative;
+}
+
+.inputEmail label {
+  /*font-size: 0.9rem;*/
+  font-weight: var(--fw-700);
+  /*border: 2px solid green;*/
+}
+
 
 .inputEmail input {
   width: 100%;
   padding: 1rem;
-  margin-top: 0.5rem;
+  margin-top: 0.3rem;
   margin-bottom: 1.5rem;
   border: 0.1rem solid var(--grey);
   border-radius: 0.5rem;
@@ -93,5 +148,15 @@ body {
   border-radius: 0.5rem;
   background-color: var(--dark-slate-grey);
   color: var(--white);
-  font-weight: bold;
+  font-weight: var(--fw-700);
+}
+
+
+/*---------------------Desktop layout-------------------------*/
+@media screen and (min-width: 48rem) {
+
+  * {
+    display: none;
+  }  
+
 }

@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="reset.css" />
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="FM_part.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
     <div class="grid-container">
@@ -24,11 +25,12 @@
         <!--2 COMPONENT-->
         <main class="newsletter">
             <!--2.1 COMPONENT-->
-            <section class="newsletter__image" aria-label="newsletter logo">
+            <!--As it is decorative image-->
+            <section class="newsletter__image" aria-hidden="true">
                 <picture class="newsletter__image-container">
                     <source media="(max-width: 47.9375rem)" srcset="assets/images/illustration-sign-up-mobile.svg">
                     <source media="(min-width: 48rem)" srcset="assets/images/illustration-sign-up-desktop.svg">
-                    <img class="image" src="assets/images/illustration-sign-up-desktop.svg" alt="Newsletter logo"/>
+                    <img class="image" src="assets/images/illustration-sign-up-mobile.svg" alt=""/>
                 </picture>
             </section>
             <!--2.2 COMPONENT-->
@@ -44,10 +46,10 @@
                 </div>
                 <form class="newsletter__subscription-form">
                     <div class="inputEmail">
-                        <label for="email" >Email address <span class="mandatory hidden">*</span></label>
-                    <span class="newsletter__subscription-form-error hidden" role="alert">Valid email required</span><br/>
-                    <input id="newsletter__subscription-form-email" type="email" name="email" required aria-required="true" placeholder="email@compony.com" />
-                    <img class="error hidden" src="assets/images/icon-error.svg" alt="error" /><br/>
+                        <label for="newsletter__subscription-form-email" >Email address <span class="mandatory">*</span></label>
+                        <span id="newsletter__subscription-form-error" class="hidden" role="alert">Valid email required</span><br/>
+                        <input id="newsletter__subscription-form-email" type="email" name="email" onkeyup="run()" aria-describedby="newsletter__subscription-form-error" aria-invalid="true" required aria-required="true" placeholder="email@compony.com" autocomplete="on"/>
+                        <img class="error__sign hidden" src="assets/images/icon-error.svg" alt="Sign of error" /><br/>
                     </div>
                     
                     <input class="inputSubmit" id="newsletter__subscription-form-btn" type="submit" value="Subscribe to monthly newsletter" />

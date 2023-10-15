@@ -9,7 +9,7 @@
 |                          |    update_2    |
 |                          |    update_3    |
 |                          |    update_4    |
-| CSS for mobile main page |                |
+| CSS for mobile main page |    update_5    |
 
 ## Challenge based on
 
@@ -32,10 +32,10 @@ Users should be able to:
 - [x] Create drawing from design (structure of design)(1st task)
 - [x] Create of repo (2nd task)
 - [x] Create HTML layout (3rd task)
-- [ ] Create CSS layout according style guides (4th task)
-- [ ] Create CSS (grid) layout for mobile first (5th task)
+- [x] Create CSS layout according style guides (4th task)
+- [x] Create CSS (grid) layout for mobile first (5th task)
 - [ ] Create CSS (grid) layout for desktop (6th task)
-- [ ] Implement JavaScript (7th task)
+- [x] Implement JavaScript (7th task) partly
 - [ ] Overview of solution and RWD (8th task)
 - [ ] Tada it is done. Congratulation you reach your goal.🎉
 
