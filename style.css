@@ -41,29 +41,6 @@ body {
   display: block;
 }
 
-.inpBorder__onFocus:hover {
-  cursor: pointer;
-  border-color: var(--dark-slate-grey);
-}
-
-.inp__onError {
-  background-color: hsl(4, 100%, 67%, .2);
-  color: var(--tomato);
-  outline-color: var(--tomato);
-  border-color: var(--tomato) !important;
-}
-
-.btnColor__onFocus:hover {
-  background-image: linear-gradient(to right, #f45366 40%, #fe8f47);
-  border: none;
-}
-
-.error__sign {
-    position: absolute;
-    top: 3rem;
-    right: .4rem;
-}
-
 /* style 1st component - mobile */
 /*https://www.w3schools.com/accessibility/accessibility_heading_levels.php*/
 .sr-only {
@@ -145,6 +122,62 @@ body {
   cursor: pointer;
   width: 100%;
   padding: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  border: 0.1rem solid var(--dark-slate-grey);
+  border-radius: 0.5rem;
+  background-color: var(--dark-slate-grey);
+  color: var(--white);
+  font-weight: var(--fw-700);
+}
+
+.inpBorder__onFocus:hover {
+  cursor: pointer;
+  border-color: var(--dark-slate-grey);
+}
+
+.inp__onError {
+  background-color: hsl(4, 100%, 67%, .2);
+  color: var(--tomato);
+  outline-color: var(--tomato);
+  border-color: var(--tomato) !important;
+}
+
+.btnColor__onFocus:hover {
+  background-image: linear-gradient(to right, #f45366 40%, #fe8f47);
+  border: none;
+}
+
+.error__sign {
+    position: absolute;
+    top: 3rem;
+    right: .4rem;
+}
+
+.newsletter__subscription-success-image {
+    margin: 6rem 0 2rem 5%;
+    max-width: 3.5rem;
+    /*border: 2px solid green;*/
+}
+
+.newsletter__subscription-success-title {
+    margin: 0 5% 1.5rem 5%;
+    font-weight: var(--fw-700);
+    font-size: 2.5rem;
+    line-height: 1;
+    /*border: 2px solid green;*/
+}
+
+.newsletter__subscription-success-info {
+    margin: 0 5% 1.5rem 5%;
+    /*border: 2px solid green;*/
+}
+
+.newsletter__subscription-success-btn {
+  cursor: pointer;
+  width: 90%;
+  margin: 6rem 5% 1rem 5%;
+  padding: 1rem;
   text-align: center;
   border: 0.1rem solid var(--dark-slate-grey);
   border-radius: 0.5rem;
@@ -156,9 +189,45 @@ body {
 
 /*---------------------Desktop layout-------------------------*/
 @media screen and (min-width: 48rem) {
-
+/*
   * {
     display: none;
-  }  
+  }  */
+
+    .grid-container {
+        /*width: 60rem;*/
+        margin: 1rem 0 0 0;
+        padding: 1rem;
+        border-radius: 1.5rem;
+        /*border: 2px solid green;*/
+    }
+
+    .newsletter {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'newsletter__info newsletter__image';
+        gap: 2rem;
+    }
+
+    .newsletter__info {
+        max-width: 23rem;
+    }
+
+    .newsletter__image {
+        justify-self: end;
+    }
 
 }
+
+
+/*----------------grid area names----------------------------*/
+
+.newsletter__info {
+    grid-area: newsletter__info;
+}
+
+.newsletter__image {
+    grid-area: newsletter__image;
+}
+

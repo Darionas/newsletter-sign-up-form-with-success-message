@@ -4,8 +4,12 @@
 const email = document.getElementById('newsletter__subscription-form-email');
 const btn = document.getElementById('newsletter__subscription-form-btn');
 const valid = document.getElementById('newsletter__subscription-form-error');
-const main = document.getElementsByClassName('newsletter__info')[0];
 const error_sign = document.getElementsByClassName('error__sign')[0];
+const img = document.getElementsByClassName('newsletter__image')[0];
+const newsLeter = document.getElementsByClassName('newsletter__info')[0];
+const form = document.getElementsByClassName('newsletter__subscription-form')[0];
+const modal = document.getElementById('myModal');
+const modalBtn = document.getElementsByClassName('newsletter__subscription-success-btn')[0];
 let get_email;
 
 email.classList.add('inpBorder__onFocus');
@@ -22,16 +26,25 @@ function run() {
 
 }
 
-btn.addEventListener('click', () => {
+//After reset initiate javascript flow (function)
+//https://stackoverflow.com/questions/10319289/how-to-execute-code-after-html-form-reset-with-jquery/27949904#27949904
+function resetForm(element) {
+    email.classList.add('inp__onError');
+    valid.classList.add('show');
+    error_sign.classList.add('show');
+
+    element.form.reset();
     if(/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/.test(get_email)) {
-        alert('Your email is submited');
-        //main.classList.add('hidden');
-        
-    } else {
-        email.classList.add('inp__onError');
-        valid.classList.add('show');
-        error_sign.classList.add('show');
+        img.classList.add('hidden');
+        newsLeter.classList.add('hidden');
+        form.classList.add('hidden');
+        modal.classList.add('show');
     }
+}
+
+//Dismiss message
+modalBtn.addEventListener('click', () => {
+    window.location.reload();
 })
 
 // It lets submit form and/or input with 'enter' key

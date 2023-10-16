@@ -19,7 +19,7 @@
 <body>
     <div class="grid-container">
         <!--1 COMPONENT-->
-        <header class="sr-only">
+        <header class="sr-only header">
             <h1>Newsletter sign-up form</h1>
         </header>
         <!--2 COMPONENT-->
@@ -52,7 +52,7 @@
                         <img class="error__sign hidden" src="assets/images/icon-error.svg" alt="Sign of error" /><br/>
                     </div>
                     
-                    <input class="inputSubmit" id="newsletter__subscription-form-btn" type="submit" value="Subscribe to monthly newsletter" />
+                    <input class="inputSubmit" id="newsletter__subscription-form-btn" type="button" value="Subscribe to monthly newsletter" onclick="resetForm(this);" />
                 </form>
 
             </section>
@@ -66,10 +66,11 @@
             </section>
         </main>
         <!--3 COMPONENT-->
-        <footer class="attribution">
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. <br> 
-            Coded by <a href="https://www.frontendmentor.io/profile/mah07308">@Ahmad Hussain</a> & <a href="https://www.frontendmentor.io/profile/Darionas">@Darionas</a>.
-        </footer>
+        
     </div>
+    <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. <br> 
+        Coded by <a href="https://www.frontendmentor.io/profile/mah07308">@Ahmad Hussain</a> & <a href="https://www.frontendmentor.io/profile/Darionas">@Darionas</a>.
+    </footer>
 </body>
 </html>

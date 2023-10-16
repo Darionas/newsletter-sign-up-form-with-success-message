@@ -3,15 +3,15 @@
   font-size: 0.6875rem;
   position: relative;
   bottom: 0;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   padding: 0.5rem;
   text-align: center;
-  color: rgb(3, 146, 248);
+  color: rgb(251, 251, 252);
   /* width: 75%; */
   align-self: center;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(210, 20%, 98%);
 }
 /*-------------------------------------------------*/
