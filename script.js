@@ -10,6 +10,8 @@ const newsLeter = document.getElementsByClassName('newsletter__info')[0];
 const form = document.getElementsByClassName('newsletter__subscription-form')[0];
 const modal = document.getElementById('myModal');
 const modalBtn = document.getElementsByClassName('newsletter__subscription-success-btn')[0];
+const max = window.matchMedia("(min-width: 768px)");
+const grid_cont = document.getElementsByClassName('grid-container')[0];
 let get_email;
 
 email.classList.add('inpBorder__onFocus');
@@ -39,6 +41,9 @@ function resetForm(element) {
         newsLeter.classList.add('hidden');
         form.classList.add('hidden');
         modal.classList.add('show');
+        if(max.matches == true) { 
+            grid_cont.style.marginTop = '7%';
+        }
     }
 }
 

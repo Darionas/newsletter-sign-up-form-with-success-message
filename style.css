@@ -66,6 +66,7 @@ body {
 
 .newsletter__description {
   margin-bottom: 1.5rem;
+  /*border: 2px solid green;*/
 }
 
 .newsletter__description-title {
@@ -131,21 +132,11 @@ body {
   font-weight: var(--fw-700);
 }
 
-.inpBorder__onFocus:hover {
-  cursor: pointer;
-  border-color: var(--dark-slate-grey);
-}
-
 .inp__onError {
   background-color: hsl(4, 100%, 67%, .2);
   color: var(--tomato);
   outline-color: var(--tomato);
   border-color: var(--tomato) !important;
-}
-
-.btnColor__onFocus:hover {
-  background-image: linear-gradient(to right, #f45366 40%, #fe8f47);
-  border: none;
 }
 
 .error__sign {
@@ -189,13 +180,8 @@ body {
 
 /*---------------------Desktop layout-------------------------*/
 @media screen and (min-width: 48rem) {
-/*
-  * {
-    display: none;
-  }  */
 
     .grid-container {
-        /*width: 60rem;*/
         margin: 1rem 0 0 0;
         padding: 1rem;
         border-radius: 1.5rem;
@@ -206,17 +192,54 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
-            'newsletter__info newsletter__image';
+            'newsletter__info newsletter__image'
+            'myModal myModal';
         gap: 2rem;
+        max-height: 37.2rem;
+        /*border: 2px solid green;*/
     }
 
     .newsletter__info {
         max-width: 23rem;
+        /*border: 2px solid green;*/
     }
 
     .newsletter__image {
         justify-self: end;
+        /*border: 2px solid green;*/
     }
+
+    .inputSubmit {
+        margin: 0;
+    }
+
+    .inpBorder__onFocus:hover {
+      cursor: pointer;
+      border-color: var(--dark-slate-grey);
+    }
+    
+    .btnColor__onFocus:hover {
+      background-image: linear-gradient(to right, #f45366 40%, #fe8f47);
+      border: none;
+    }
+
+    .newsletter__subscription-success {
+      max-width: 25rem;
+      /*border: 2px solid green;*/
+    }
+
+    .newsletter__subscription-success-image {
+      margin: 0rem 0 2rem 5%;
+  }
+
+  .newsletter__subscription-success-btn {
+    margin: 1.5rem 5% 2rem 5%;
+  }
+
+  .newsletter__subscription-success-btn:hover {
+    background-image: linear-gradient(to right, #f45366 40%, #fe8f47);
+    border: none;
+  }
 
 }
 
@@ -229,5 +252,9 @@ body {
 
 .newsletter__image {
     grid-area: newsletter__image;
+}
+
+#myModal {
+  grid-area: myModal;
 }
 
