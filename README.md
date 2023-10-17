@@ -11,6 +11,8 @@
 |                          |    update_4    |
 |                          |    update_5    |
 |                          |    update_6    |
+|                          |    update_7    |
+|                          |    update_8    |
 
 ## Challenge based on
 
@@ -35,10 +37,10 @@ Users should be able to:
 - [x] Create HTML layout (3rd task)
 - [x] Create CSS layout according style guides (4th task)
 - [x] Create CSS (grid) layout for mobile first (5th task)
-- [ ] Create CSS (grid) layout for desktop (6th task)
+- [x] Create CSS (grid) layout for desktop (6th task)
 - [x] Implement JavaScript (7th task) partly
-- [ ] Overview of solution and RWD (8th task)
-- [ ] Tada it is done. Congratulation you reach your goal.🎉
+- [x] Overview of solution and RWD (8th task)
+- [x] Tada it is done. Congratulation you reach your goal.🎉
 
 ## GitHub flow, so all code changes happen through Pull Request
 
