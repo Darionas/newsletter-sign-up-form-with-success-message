@@ -28,19 +28,20 @@ function run() {
 
 }
 
-//After reset initiate javascript flow (function)
+//After form reset initiate javascript flow (function)
 //https://stackoverflow.com/questions/10319289/how-to-execute-code-after-html-form-reset-with-jquery/27949904#27949904
 function resetForm(element) {
     email.classList.add('inp__onError');
     valid.classList.add('show');
     error_sign.classList.add('show');
-
     element.form.reset();
+    
     if(/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/.test(get_email)) {
         img.classList.add('hidden');
         newsLeter.classList.add('hidden');
         form.classList.add('hidden');
         modal.classList.add('show');
+
         if(max.matches == true) { 
             grid_cont.style.marginTop = '7%';
         }
@@ -50,11 +51,9 @@ function resetForm(element) {
 //Dismiss message
 modalBtn.addEventListener('click', () => {
     window.location.reload();
-})
+});
 
-// It lets submit form and/or input with 'enter' key
-//https://stackoverflow.com/questions/20484738/submit-form-on-enter-key-with-javascript#answer-20484978
-//https://stackoverflow.com/questions/2490825/how-to-trigger-event-in-javascript#answer-50587874
+//submit form and/or input with 'enter' key
 document.onkeydown = function() {
     if(window.keyCode == '13') {
         let evt = new Event('click');

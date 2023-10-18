@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
-  <meta name="keywords" content="Newsletter, sign up, message" />
-  <meta name="description" content="Newsletter sign-up form with success message" />
-  <meta name="author" content="Ahmad Hussain & darionas" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="reset.css" />
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="FM_part.css" />
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+    <meta name="keywords" content="Newsletter, sign up, message" />
+    <meta name="description" content="Newsletter sign-up form with success message" />
+    <meta name="author" content="Ahmad Hussain & darionas" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="FM_part.css" />
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="grid-container">
@@ -25,7 +25,7 @@
         <!--2 COMPONENT-->
         <main class="newsletter">
             <!--2.1 COMPONENT-->
-            <!--As it is decorative image-->
+            <!--decorative image-->
             <section class="newsletter__image" aria-hidden="true">
                 <picture class="newsletter__image-container">
                     <source media="(max-width: 47.9375rem)" srcset="assets/images/illustration-sign-up-mobile.svg">
@@ -40,7 +40,7 @@
                     <p class="newsletter__description-offer">Join 60,000+ product managers receiving monthly updates on:</p>
                     <ul class="newsletter__description-offer-list">
                         <li><img class="check__mark" src="assets/images/icon-list.svg" alt="Check mark" /><span class="txt">Product discovery and building what matters</span></li>
-                        <li><img class="check__mark" src="assets/images/icon-list.svg" alt="Check mark" /><span class="txt">Measuring to ensure updates are a success</span></span></li>
+                        <li><img class="check__mark" src="assets/images/icon-list.svg" alt="Check mark" /><span class="txt">Measuring to ensure updates are a success</span></li>
                         <li><img class="check__mark" src="assets/images/icon-list.svg" alt="Check mark" /><span class="txt">And much more!</span></li>
                     </ul>
                 </div>
@@ -51,10 +51,8 @@
                         <input id="newsletter__subscription-form-email" type="email" name="email" onkeyup="run()" aria-describedby="newsletter__subscription-form-error" aria-invalid="true" required aria-required="true" placeholder="email@compony.com" autocomplete="on"/>
                         <img class="error__sign hidden" src="assets/images/icon-error.svg" alt="Sign of error" /><br/>
                     </div>
-                    
                     <input class="inputSubmit" id="newsletter__subscription-form-btn" type="button" value="Subscribe to monthly newsletter" onclick="resetForm(this);" />
                 </form>
-
             </section>
             <!--2.3 COMPONENT (modal)-->
             <section id="myModal" class="newsletter__subscription-success hidden" aria-label="Form has been submitted successfully">
@@ -66,7 +64,6 @@
             </section>
         </main>
         <!--3 COMPONENT-->
-        
     </div>
     <footer class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. <br> 
